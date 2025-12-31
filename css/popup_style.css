@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*button*/
+.button_contents {
+    padding-left: 5px;
+    height: 20px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.icon_area {
+    width: 20px;
+    height: auto;
+}
+.button_desing {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    padding: 2px 2px;
+    font-weight: bold;
+    border: 2px solid #00cae0;
+    color: #00cae0;
+    transition: 0.5s;
+    .button_icon {
+        display: inline-block;
+        vertical-align: text-bottom;
+        position: relative;
+        fill: #00cae0;
+        transition: 0.5s;
+    }
+}
+.button_desing:hover {
+    color: #fff;
+    background: #00cae0;
+    .button_icon {
+        fill: #fff;
+    }
+}
+.button_between_line {
+    margin: 10px 0px;
+    border-top: 2px solid #00cae0;
+}
+.button_between {
+    margin: 5px 0px;
+}
