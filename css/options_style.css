@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contents {
+    padding: 10px 10px;
+}
+
+.container {
+    margin: 10px 10px;
+}
+
+/*title*/
+.title_icon {
+    fill: #00cae0;
+}
+.title_text {
+    color: #00cae0;
+}
+.title_line {
+    padding-bottom: 20px;
+    border-top: 2px solid #00cae0;
+}
+
+/*menu*/
+.between {
+    padding-bottom: 5px;
+}
+
+.blank_left {
+    margin-left: 50px;
+}
+
+/*menu button*/
+.menu_button_contents {
+    display: flex;
+}
+.menu_button_desing {
+    width: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-right: 10px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid #00cae0;
+    color: #00cae0;
+    transition: 0.5s;
+    .button_icon {
+        display: inline-block;
+        vertical-align: text-bottom;
+        position: relative;
+        fill: #00cae0;
+        transition: 0.5s;
+    }
+}
+.menu_button_desing:hover {
+    color: #fff;
+    background: #00cae0;
+    .button_icon {
+        fill: #fff;
+    }
+}
+
+/*toast*/
+.toast {
+    width: 100%;
+    height: 20px;
+    top: 0vh;
+    left: 0vw;
+    color: #fff;
+    z-index: 1000;
+    position: fixed;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    background: #00cae0;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*table*/
+.table_design {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table_line_bottom {
+    border-bottom: 1px solid #00cae0;
+    padding: 8px 10px;
+}
+.table_line_right {
+    border-right: 1px solid #00cae0;
+    padding: 8px 10px;
+}
+.bold_line{
+    border-right: 3px solid #00cae0
+}
+.table_last_right_element {
+    padding: 8px 10px;
+}
+td {
+    text-align: center;
+}
+
+/*text area*/
+.text_box {
+    padding: 3px 6px;
+    border: 1px solid #3d3d3d;
+    .alp {
+        padding: 3px 2px;
+    }
+}
+
+/*select_box*/
+.select_box {
+    position: relative;
+}
+.select_box select {
+    padding: 3px 6px;
+    border: 1px solid #3d3d3d;
+}
+
+/*color_picker*/
+.color_picker {
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+}
+
+/*checkbox*/
+.checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #3d3d3d;
+}
+
+/*button*/
+.button_desing {
+    width: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: auto;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid #00cae0;
+    color: #00cae0;
+    transition: 0.5s;
+    .button_icon {
+        display: inline-block;
+        vertical-align: text-bottom;
+        position: relative;
+        fill: #00cae0;
+        transition: 0.5s;
+    }
+}
+.button_desing:hover {
+    color: #fff;
+    background: #00cae0;
+    .button_icon {
+        fill: #fff;
+    }
+}
+
+/*tseter*/
+.tester {
+    padding: 10px;
+    margin: 5px;
+}
+.tester_str {
+    text-shadow: 0 0 5px rgba(255,255,255,0.9);
+    background: linear-gradient(to right,rgba(255, 255, 255, 0), rgb(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    border-radius: 2px;
+    padding: 10 5px;
+}
+
+/*pattern*/
+.bg_border_pattern {
+    background-image: repeating-linear-gradient(90deg,#ffffff50, #ffffff50 5px,transparent 0, transparent 15px);
+}
+.bg_diagonal_stripe_pattern {
+    background-image: repeating-linear-gradient(45deg,#ffffff50, #ffffff50 5px,transparent 0, transparent 15px);
+}
+.bg_plaid_pattern {
+    background : repeating-linear-gradient(90deg, #ffffff50, #ffffff50 5px, transparent 0, transparent 15px),
+    repeating-linear-gradient(0deg, #ffffff50, #ffffff50 5px, transparent 0, transparent 15px);
+}
+.bg_hatching_pattern {
+    background-image: repeating-linear-gradient(45deg, #ffffff50, #ffffff50 5px, transparent 5px, transparent 15px),
+    repeating-linear-gradient(-45deg, #ffffff50, #ffffff50 5px, transparent 5px, transparent 15px);
+}

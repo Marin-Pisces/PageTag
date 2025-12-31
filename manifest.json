@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "PageTag",
+    "version": "1.2.0",
+    "description": "環境識別と作業ログに使える、ページマーキング拡張機能",
+    "icons": {
+        "16": "images/bookmark16.png",
+        "32": "images/bookmark32.png",
+        "48": "images/bookmark48.png",
+        "128": "images/bookmark128.png"
+    },
+    "background" : {
+        "service_worker" : "js/background.js"
+    },
+    "action": {
+        "defalt_icon": {
+            "16": "images/bookmark16.png",
+            "32": "images/bookmark32.png",
+            "48": "images/bookmark48.png",
+            "128": "images/bookmark128.png"
+        },
+        "defalt_title": "Page Marker",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/jquery-3.7.1.min.js", "js/content.js"]
+        }
+    ],
+    "options_page": "options.html",
+    "permissions": ["storage", "tabs"]
+}
