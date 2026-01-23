@@ -13,7 +13,11 @@ const local_data = {
         }
     }
 };
-    
+
 chrome.runtime.onInstalled.addListener(() => {
-    chrome.storage.local.set(local_data);
-})
+    chrome.storage.local.get(['labels'], (result) => {
+        if (!result.labels) {
+            chrome.storage.local.set(local_data);
+        }
+    });
+});
